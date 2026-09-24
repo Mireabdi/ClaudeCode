@@ -1,0 +1,8 @@
+# Skriptin ajon tuottamat raportit (sisältävät oikean koneen tiedot).
+# Kauttaviiva alussa = vain juurikansio, esimerkkiraportti/ jää mukaan.
+/tyoasemakatsastus_*.html
+
+# Windowsin ja editorin omat tiedostot
+Thumbs.db
+desktop.ini
+.vscode/
