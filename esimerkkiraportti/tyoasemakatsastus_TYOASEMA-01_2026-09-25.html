@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Työasemakatsastus - TYOASEMA-01</title>
+<style>
+  body { font-family: "Segoe UI", Arial, sans-serif; background: #f3f3f3; color: #222; margin: 0; padding: 24px; }
+  .sivu { max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 26px; margin: 0 0 4px 0; }
+  .meta { color: #555; margin: 0 0 20px 0; }
+  .yhteenveto { background: #fff; border: 1px solid #ccc; border-left: 6px solid #999; padding: 14px 16px; margin-bottom: 20px; font-size: 18px; font-weight: 600; }
+  .kortti { background: #fff; border: 1px solid #ccc; border-left: 6px solid #999; padding: 12px 16px; margin-bottom: 12px; }
+  .ok { border-left-color: #2e7d32; }
+  .huomio { border-left-color: #e0a800; }
+  .kriittinen { border-left-color: #c62828; }
+  .eisaatavilla { border-left-color: #888; }
+  .otsikko { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  h2 { font-size: 18px; margin: 0; }
+  .tila { font-size: 13px; font-weight: bold; padding: 2px 10px; white-space: nowrap; }
+  .ok .tila { background: #e3f1e4; color: #1b5e20; }
+  .huomio .tila { background: #fff4cc; color: #7a5a00; }
+  .kriittinen .tila { background: #fbe3e3; color: #b71c1c; }
+  .eisaatavilla .tila { background: #e8e8e8; color: #444; }
+  .kortti p { margin: 8px 0 4px 0; }
+  ul { margin: 6px 0 0 0; padding-left: 20px; color: #444; font-size: 14px; }
+  li { margin: 2px 0; word-break: break-word; }
+  footer { color: #777; font-size: 13px; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="sivu">
+  <h1>Työasemakatsastus</h1>
+  <p class="meta">Kone: <strong>TYOASEMA-01</strong> &nbsp;|&nbsp; Raportti luotu: 25.9.2026 00:50</p>
+  <div class="yhteenveto huomio">0 kriittistä ongelmaa, 1 huomio, kaikki muu OK</div>
+  <div class="kortti ok">
+    <div class="otsikko">
+      <h2>Levytila</h2>
+      <span class="tila">OK</span>
+    </div>
+    <p>Levyjä 1, vähiten vapaata: C: 87 %</p>
+    <ul>
+      <li>C: 828.6 Gt vapaana / 952.9 Gt (87 %)</li>
+    </ul>
+  </div>
+  <div class="kortti huomio">
+    <div class="otsikko">
+      <h2>Windows Update</h2>
+      <span class="tila">Huomio</span>
+    </div>
+    <p>Viimeisin päivitys 2 vrk sitten, 1 odottaa asennusta</p>
+    <ul>
+      <li>Viimeisin päivitys: KB5129195, asennettu 23.9.2026 (2 vrk sitten)</li>
+      <li>Odottaa: Realtek Semiconductor Corp. Driver Update (6101.19.135.0)</li>
+    </ul>
+  </div>
+  <div class="kortti ok">
+    <div class="otsikko">
+      <h2>Tärkeät palvelut</h2>
+      <span class="tila">OK</span>
+    </div>
+    <p>4 palvelua tarkistettu, kaikki kunnossa</p>
+    <ul>
+      <li>Windows Update (wuauserv): käynnissä</li>
+      <li>DNS Client (Dnscache): käynnissä</li>
+      <li>DHCP Client (Dhcp): käynnissä</li>
+      <li>Microsoft Defender Antivirus Service (WinDefend): käynnissä</li>
+    </ul>
+  </div>
+  <div class="kortti ok">
+    <div class="otsikko">
+      <h2>Virheet tapahtumalokeissa</h2>
+      <span class="tila">OK</span>
+    </div>
+    <p>4 virhettä viimeisen 24 tunnin aikana</p>
+    <ul>
+      <li>Järjestelmä-loki: 4 virhettä</li>
+      <li>Sovellus-loki: 0 virhettä</li>
+      <li>25.9. 00:32 | Järjestelmä | Microsoft-Windows-TPM-WMI (ID 1040) | Pre-attestation health checks confirm a critical component has failed, and the device is not expected to pass attestatio...</li>
+      <li>24.9. 19:59 | Järjestelmä | Microsoft-Windows-TPM-WMI (ID 1040) | Pre-attestation health checks confirm a critical component has failed, and the device is not expected to pass attestatio...</li>
+      <li>24.9. 11:11 | Järjestelmä | Microsoft-Windows-TPM-WMI (ID 1040) | Pre-attestation health checks confirm a critical component has failed, and the device is not expected to pass attestatio...</li>
+      <li>24.9. 08:48 | Järjestelmä | Microsoft-Windows-TPM-WMI (ID 1040) | Pre-attestation health checks confirm a critical component has failed, and the device is not expected to pass attestatio...</li>
+    </ul>
+  </div>
+  <div class="kortti ok">
+    <div class="otsikko">
+      <h2>Verkkoyhteys</h2>
+      <span class="tila">OK</span>
+    </div>
+    <p>Yhteys toimii, IP 192.168.1.104</p>
+    <ul>
+      <li>Verkkosovitin: WLAN</li>
+      <li>IP-osoite: 192.168.1.104</li>
+      <li>Oletusyhdyskäytävä: 192.168.1.1</li>
+      <li>DNS-palvelimet: 10.0.0.1, 10.0.0.2</li>
+      <li>Ping 8.8.8.8: onnistui</li>
+      <li>DNS-kysely (www.microsoft.com): onnistui</li>
+    </ul>
+  </div>
+  <div class="kortti ok">
+    <div class="otsikko">
+      <h2>Käynnissäoloaika</h2>
+      <span class="tila">OK</span>
+    </div>
+    <p>Käynnissä 1 vrk 1 h</p>
+    <ul>
+      <li>Käynnistetty viimeksi: 23.9.2026 23:01</li>
+    </ul>
+  </div>
+  <div class="kortti ok">
+    <div class="otsikko">
+      <h2>Muistin käyttö</h2>
+      <span class="tila">OK</span>
+    </div>
+    <p>Muistia käytössä 40 %</p>
+    <ul>
+      <li>Käytössä 6.1 Gt / 15.4 Gt</li>
+      <li>claude: 1615 Mt</li>
+      <li>svchost: 1533 Mt</li>
+      <li>msedgewebview2: 386 Mt</li>
+      <li>powershell: 329 Mt</li>
+      <li>MsMpEng: 306 Mt</li>
+    </ul>
+  </div>
+  <footer>Raportin teki tyoasemakatsastus.ps1 (PowerShell 5.1.26100.9444)</footer>
+</div>
+</body>
+</html>
